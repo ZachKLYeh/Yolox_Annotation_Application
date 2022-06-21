@@ -44,7 +44,7 @@ Then executable file reside in Yolox_Annotation_Application/dist/main.exe
 > However, if there's already a "visualized_images" folder, this will raise a warning.
 > Making sure you are notified of overwriting these images.
 
-* Press 'Generate annotations' button
+* Press "Generate annotations" button
 
 > This will generate the result, both annotations and visualized images.
 > After the generation. There will be a pop up window, indicating the annotation path and visualizing images path.
