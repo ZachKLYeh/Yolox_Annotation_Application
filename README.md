@@ -1,8 +1,19 @@
 ## Getting Started
 
-This script can be wrap up into executable file via pyinstaller.
+The yoloxm.onnx is the onnx file generated from yolox training. 
 
-The yoloxm.onnx is the onnx file generated from yolox training.
+The onnx file is trained on 640,640 image size.
+
+You can also simply execute the python file, after you installed all the requirement packages.
+
+```
+pip install -r requirements.txt
+```
+```
+python main.py
+```
+
+Also, this script can be wrap up into executable file via pyinstaller.
 
 You can generate the executable application by executing these commands.
 
@@ -21,12 +32,6 @@ pip install pyinstaller
 pyinstaller main.py --onefile --add-data "yoloxm.onnx;." --windowed
 ```
 Then executable file reside in Yolox_Annotation_Application/dist/main.exe
-
-Or you can simply execute the python file, make sure you installed all the requirement packages.
-
-```
-python main.py
-```
 
 ## Feature Introduction
 
