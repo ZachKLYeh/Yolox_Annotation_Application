@@ -81,3 +81,8 @@ Then executable file reside in Yolox_Annotation_Application/dist/main.exe
 ### Invalid path error
 
 > If your input folder or output folder path does not exist, this will raise an error.
+
+### Invalid label error
+
+> If your xml file have bonding box location that exceed image size, this will raise an error.
+> The error will report the xml file that has invalid bonding box location.
