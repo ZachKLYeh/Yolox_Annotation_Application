@@ -22,6 +22,11 @@ pyinstaller main.py --onefile --add-data "yoloxm.onnx;." --windowed
 ```
 Then executable file reside in Yolox_Annotation_Application/dist/main.exe
 
+Or you can simply execute the python file, make sure you installed all the requirement packages.
+
+```
+python main.py
+```
 
 ## Feature Introduction
 
