@@ -4,7 +4,9 @@ The yoloxm.onnx is the onnx file generated from yolox training.
 
 The onnx file is trained on 640,640 image size.
 
-You can also simply execute the python file, after you installed all the requirement packages.
+### Python script deployment
+
+You can simply execute the python file, after you installed all the requirement packages.
 
 ```
 pip install -r requirements.txt
@@ -12,6 +14,8 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+
+###Pyinstaller deployment
 
 Also, this script can be wrap up into executable file via pyinstaller.
 
