@@ -15,7 +15,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-###Pyinstaller deployment
+### Pyinstaller deployment
 
 Also, this script can be wrap up into executable file via pyinstaller.
 
