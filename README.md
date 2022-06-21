@@ -8,7 +8,7 @@ The onnx file use in this application is trained on 640x640 images with yolox_m 
 
 [download] https://drive.google.com/file/d/1Uz1aozpxPJrytR7XXZzUbRRwAkkOH02M/view?usp=sharing
 
-### Python script deployment
+### Python script conda environment deployment
 
 You can simply execute the python file, after you installed all the requirement packages.
 
@@ -17,6 +17,9 @@ git clone [this repo](https://github.com/ZachKLYeh/Yolox_Annotation_Application.
 ```
 ```
 cd Yolox_Annotation_Application
+```
+```
+conda env update --name myenv --file environment.yml --prune
 ```
 ```
 pip install -r requirements.txt
