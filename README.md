@@ -1,7 +1,16 @@
 This is the document for this yolox annotation app
-The executable file reside in "yolox/dist/main.exe"
 
-CONTENTS:
+Getting started:
+This script can be wrap up into executable file via pyinstaller
+The yoloxm.onnx is the onnx file generated from yolox training
+You can made up the app by these two commands
+
+1.pip install pyinstaller
+2.pyinstaller main.py --onefile --add-data "yoloxm.onnx;." --windowed
+
+The executable file reside in yolox_annotation_application/dist/main.exe
+
+DOCUMENT CONTENTS:
 --FEATURE INTRODUCTION
 --WARNING MESSAGES
 --ERROR MESSAGES
