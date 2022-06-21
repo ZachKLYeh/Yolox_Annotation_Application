@@ -70,7 +70,7 @@ Then executable file reside in Yolox_Annotation_Application/dist/main.exe
 ### Visualized image exist warning
 
 > This is the case when your designated output folder already have visualized images.
->　There will be a warning, you can decide whether to overwrite the image files.
+> There will be a warning, you can decide whether to overwrite the image files.
 
 ## Error Messages
 
