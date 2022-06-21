@@ -4,7 +4,7 @@ This script can be wrap up into executable file via pyinstaller.
 
 The yoloxm.onnx is the onnx file generated from yolox training.
 
-You can generate the executable application by executing these commands
+You can generate the executable application by executing these commands.
 
 The executable file reside in Yolox_Annotation_Application/dist/main.exe
 
