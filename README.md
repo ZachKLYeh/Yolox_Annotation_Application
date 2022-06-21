@@ -9,6 +9,12 @@ The onnx file is trained on 640,640 image size.
 You can simply execute the python file, after you installed all the requirement packages.
 
 ```
+git clone [this repo](https://github.com/ZachKLYeh/Yolox_Annotation_Application.git)
+```
+```
+cd Yolox_Annotation_Application
+```
+```
 pip install -r requirements.txt
 ```
 ```
