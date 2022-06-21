@@ -3,7 +3,7 @@ This is the document for this yolox annotation app
 ----------GETTING STARTED----------
 
 Getting started:
-This script can be wrap up into executable file via pyinstaller\n
+This script can be wrap up into executable file via pyinstaller
 The yoloxm.onnx is the onnx file generated from yolox training
 You can made up the app by these two commands
 
