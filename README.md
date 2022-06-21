@@ -22,8 +22,6 @@ Then executable file reside in Yolox_Annotation_Application/dist/main.exe
 
 ## Feature Introduction
 
-There are two main features:
-
 ### Generate xml format annotations:
 
 * Select the input folder and output folder:
@@ -61,8 +59,6 @@ There are two main features:
 
 ## Warning Messages
 
-There are two main warning messages:
-
 ### Xml exist warning:
 
 > This is the case when your designated output folder already have labeled data.
@@ -74,8 +70,6 @@ There are two main warning messages:
 >　There will be a warning, you can decide whether to overwrite the image files.
 
 ## Error Messages
-
-There are two main error messages
 
 ### File format error:
 
