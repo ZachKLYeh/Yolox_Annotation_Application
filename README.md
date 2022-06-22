@@ -10,15 +10,15 @@ The onnx file use in this application is trained on 640x640 images with yolox_m 
 
 The file structure should be like this:
 
-Yolox_Annotation_Application
+Yolox_Annotation_Application(root)
 
-├ main.py
+  ├ main.py
 
-├ requirements.txt
+  ├ requirements.txt
 
-├ README.md
+  ├ README.md
 
-└ yoloxm.onnx
+  └ yoloxm.onnx
 
 ### Python script deployment
 
