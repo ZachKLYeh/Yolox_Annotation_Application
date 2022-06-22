@@ -6,8 +6,6 @@ The yoloxm.onnx is the onnx file generated from yolox training.
 
 The onnx file use in this application is trained on 640x640 images with yolox_m model.
 
-[download] https://drive.google.com/file/d/1Uz1aozpxPJrytR7XXZzUbRRwAkkOH02M/view?usp=sharing
-
 The file structure should be like this:
 
 Yolox_Annotation_Application(root)
