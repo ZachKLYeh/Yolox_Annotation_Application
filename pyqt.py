@@ -164,7 +164,7 @@ class MainWindow(QMainWindow):
         self.generatebutton.setEnabled(True)
 
         #if there is an error
-        if self.generatethread.get_error_msg() != "normal":
+        if self.generatethread.get_error_msg() != "":
             self.set_progressbar_value(0)
             self.setWindowTitle("Yolox Annotation")
             self.show_error(self.generatethread.get_error_msg())
@@ -196,7 +196,7 @@ class MainWindow(QMainWindow):
         self.calculatebutton.setEnabled(True)
 
         #show error if there is
-        if self.calculatethread.get_error_msg() != "normal":
+        if self.calculatethread.get_error_msg() != "":
             self.set_progressbar_value(0)
             self.setWindowTitle("Yolox Annotation")
             self.show_error(self.calculatethread.get_error_msg())
@@ -411,7 +411,7 @@ class GenerationThread(QThread):
         elif self.outputdirerror ==True:
             return "Output directory is invalid:\nPlease check the output directory"
         else:
-            return "normal"
+            return ""
 
 
 #PyQt thread: calculation thread
@@ -451,7 +451,7 @@ class CalculationThread(QThread):
         #check input dir existence
         #copying files to temp directory
         if os.path.exists(self.input_dir):
-            self.errormsg = "normal"
+            self.errormsg = ""
         else:
             self.errormsg = "Input directory is invalid:\nPlease check the input directory"
             self.input_dir = self.temp_dir_path
