@@ -2,6 +2,8 @@
 
 The yoloxm.onnx is the onnx file generated from yolox training. 
 
+You can only activate the calculation feature without onnx model.
+
 The onnx file use in this application is trained on 640x640 images with yolox_m model. [[Yolox Github]](https://github.com/Megvii-BaseDetection/YOLOX)
 
 ### Python script deployment
