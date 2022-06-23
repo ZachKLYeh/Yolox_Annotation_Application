@@ -2,21 +2,7 @@
 
 The yoloxm.onnx is the onnx file generated from yolox training. 
 
-The onnx file use in this application is trained on 640x640 images with yolox_m model.
-
-[reference] https://github.com/Megvii-BaseDetection/YOLOX
-
-The file structure should be like this:
-
--Yolox_Annotation_Application(root)
-
-  ├ main.py
-
-  ├ requirements.txt
-
-  ├ README.md
-
-  └ yoloxm.onnx
+The onnx file use in this application is trained on 640x640 images with yolox_m model. [[Yolox Github]](https://github.com/Megvii-BaseDetection/YOLOX)
 
 ### Python script deployment
 
@@ -66,6 +52,10 @@ main.exe
 
 
 ## Feature Introduction
+
+![Main Window][mainwindow]
+
+[mainwindow]: https://github.com/ZachKLYeh/Yolox_Annotation_Application/pictures/mainwindow.jpg
 
 ### Generate xml format annotations:
 
