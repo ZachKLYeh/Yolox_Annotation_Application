@@ -94,19 +94,17 @@ main.exe
 
 ![](pictures/calculating.jpg)
 
+![](pictures/calculation_report.jpg)
+
+
 ## Warning Messages
 
+### Overwrite warning
+
+> This is the case when your designated output folder already have labeled data or visualized images.
+> There will be a warning, you can decide whether to overwrite the files.
+
 ![](pictures/warning.jpg)
-
-### Xml exist warning
-
-> This is the case when your designated output folder already have labeled data.
-> There will be a warning, you can decide whether to overwrite the xml files.
-
-### Visualized image exist warning
-
-> This is the case when your designated output folder already have visualized images.
-> There will be a warning, you can decide whether to overwrite the image files.
 
 ## Error Messages
 
