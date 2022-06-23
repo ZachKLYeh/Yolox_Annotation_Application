@@ -11,7 +11,7 @@ You can simply execute the python file, after you installed all the requirement 
 The python version is 3.8.3
 
 ```
-git clone [this repo](https://github.com/ZachKLYeh/Yolox_Annotation_Application.git)
+git clone https://github.com/ZachKLYeh/Yolox_Annotation_Application.git
 ```
 ```
 cd Yolox_Annotation_Application
