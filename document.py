@@ -42,15 +42,10 @@ The python version is 3.8.3
 
 ## Warning Messages
 
-### Xml exist warning
+### Overwrite warning
 
-> This is the case when your designated output folder already have labeled data.
-> There will be a warning, you can decide whether to overwrite the xml files.
-
-### Visualized image exist warning
-
-> This is the case when your designated output folder already have visualized images.
-> There will be a warning, you can decide whether to overwrite the image files.
+> This is the case when your designated output folder already have labeled data or visualized images.
+> There will be a warning, you can decide whether to overwrite the files.
 
 ## Error Messages
 
