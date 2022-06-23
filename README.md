@@ -34,7 +34,7 @@ You can generate the executable application by executing these commands.
 The executable file reside in Yolox_Annotation_Application/dist/main.exe
 
 ```
-git clone [this repo](https://github.com/ZachKLYeh/Yolox_Annotation_Application.git)
+git clone https://github.com/ZachKLYeh/Yolox_Annotation_Application.git
 ```
 ```
 cd Yolox_Annotation_Application
