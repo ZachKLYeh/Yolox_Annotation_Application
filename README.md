@@ -53,6 +53,8 @@ main.exe
 
 ## Feature Introduction
 
+### Main Window
+
 ![](pictures/mainwindow.jpg)
 
 ### Generate xml format annotations:
