@@ -2,21 +2,7 @@
 
 The yoloxm.onnx is the onnx file generated from yolox training. 
 
-The onnx file use in this application is trained on 640x640 images with yolox_m model.
-
-[reference] https://github.com/Megvii-BaseDetection/YOLOX
-
-The file structure should be like this:
-
--Yolox_Annotation_Application(root)
-
-  ├ main.py
-
-  ├ requirements.txt
-
-  ├ README.md
-
-  └ yoloxm.onnx
+The onnx file use in this application is trained on 640x640 images with yolox_m model. [[Yolox Github]](https://github.com/Megvii-BaseDetection/YOLOX)
 
 ### Python script deployment
 
@@ -67,6 +53,10 @@ main.exe
 
 ## Feature Introduction
 
+### Main Window
+
+![](pictures/mainwindow.jpg)
+
 ### Generate xml format annotations:
 
 * Select the input folder and output folder
@@ -91,6 +81,8 @@ main.exe
 > This will generate the result, both annotations and visualized images.
 > After the generation. There will be a pop up window, indicating the annotation path and visualizing images path.
 
+![](pictures/generating.jpg)
+
 ### Caluculate annonation instance:
 
 * Select input folder
@@ -102,17 +94,19 @@ main.exe
 > This will calculate label instances in the input folder, also sub folders in the input folder.
 > The result will be reported in a pop up window after calculation.
 
+![](pictures/calculating.jpg)
+
+![](pictures/calculation_report.jpg)
+
+
 ## Warning Messages
 
-### Xml exist warning
+### Overwrite warning
 
-> This is the case when your designated output folder already have labeled data.
-> There will be a warning, you can decide whether to overwrite the xml files.
+> This is the case when your designated output folder already have labeled data or visualized images.
+> There will be a warning, you can decide whether to overwrite the files.
 
-### Visualized image exist warning
-
-> This is the case when your designated output folder already have visualized images.
-> There will be a warning, you can decide whether to overwrite the image files.
+![](pictures/warning.jpg)
 
 ## Error Messages
 
@@ -120,11 +114,18 @@ main.exe
 
 > If the input folder exist some files except for jpg and xml format, this will raise an error.
 
+![](pictures/file_format_error.jpg)
+
 ### Invalid path error
 
 > If your input folder or output folder path does not exist, this will raise an error.
+
+![](pictures/input_path_error.jpg)
+![](pictures/output_path_error.jpg)
 
 ### Invalid label error
 
 > If your xml file have bonding box location that exceed image size, this will raise an error.
 > The error will report the xml file that has invalid bonding box location.
+
+![](pictures/invalid_label_error.jpg)
