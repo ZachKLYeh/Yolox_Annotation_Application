@@ -12,6 +12,10 @@ from PyQt5.QtWidgets import  QFormLayout, QHBoxLayout, QVBoxLayout, QPushButton,
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtGui import QFont
 
+#import darktheme
+import qdarktheme
+#set style sheet
+style_sheet = qdarktheme.load_stylesheet()
 #set application font
 app_font = QFont("Arial", 8)
 

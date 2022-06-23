@@ -6,8 +6,7 @@ __version__ = "0.0.1"
 __email__ = "zach.kl.yeh@gmail.com"
 
 import sys
-import qdarktheme
-from pyqt import MainWindow, app_font
+from pyqt import MainWindow, app_font, style_sheet
 from PyQt5.QtWidgets import QApplication
 
 #main function
@@ -15,7 +14,7 @@ def main():
 
     app = QApplication(sys.argv)
     window = MainWindow()
-    app.setStyleSheet(qdarktheme.load_stylesheet())
+    app.setStyleSheet(style_sheet)
     app.instance().setFont(app_font)
     window.show()
     sys.exit(app.exec())
