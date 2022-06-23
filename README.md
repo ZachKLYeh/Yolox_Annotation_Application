@@ -53,9 +53,7 @@ main.exe
 
 ## Feature Introduction
 
-![Main Window][mainwindow]
-
-[mainwindow]: https://github.com/ZachKLYeh/Yolox_Annotation_Application/pictures/mainwindow.jpg
+![](pictures/mainwindow.jpg)
 
 ### Generate xml format annotations:
 
@@ -81,6 +79,8 @@ main.exe
 > This will generate the result, both annotations and visualized images.
 > After the generation. There will be a pop up window, indicating the annotation path and visualizing images path.
 
+![](pictures/generating.jpg)
+
 ### Caluculate annonation instance:
 
 * Select input folder
@@ -92,7 +92,11 @@ main.exe
 > This will calculate label instances in the input folder, also sub folders in the input folder.
 > The result will be reported in a pop up window after calculation.
 
+![](pictures/calculating.jpg)
+
 ## Warning Messages
+
+![](pictures/warning.jpg)
 
 ### Xml exist warning
 
@@ -110,11 +114,18 @@ main.exe
 
 > If the input folder exist some files except for jpg and xml format, this will raise an error.
 
+![](pictures/file_format_error.jpg)
+
 ### Invalid path error
 
 > If your input folder or output folder path does not exist, this will raise an error.
+
+![](pictures/input_path_error.jpg)
+![](pictures/output_path_error.jpg)
 
 ### Invalid label error
 
 > If your xml file have bonding box location that exceed image size, this will raise an error.
 > The error will report the xml file that has invalid bonding box location.
+
+![](pictures/invalid_label_error.jpg)
