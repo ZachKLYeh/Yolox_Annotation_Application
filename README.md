@@ -2,6 +2,8 @@
 
 The yoloxm.onnx is the onnx file generated from yolox training. 
 
+You can only activate the calculation feature without onnx model.
+
 The onnx file use in this application is trained on 640x640 images with yolox_m model. [[Yolox Github]](https://github.com/Megvii-BaseDetection/YOLOX)
 
 ### Python script deployment
@@ -11,7 +13,7 @@ You can simply execute the python file, after you installed all the requirement 
 The python version is 3.8.3
 
 ```
-git clone [this repo](https://github.com/ZachKLYeh/Yolox_Annotation_Application.git)
+git clone https://github.com/ZachKLYeh/Yolox_Annotation_Application.git
 ```
 ```
 cd Yolox_Annotation_Application
@@ -32,7 +34,7 @@ You can generate the executable application by executing these commands.
 The executable file reside in Yolox_Annotation_Application/dist/main.exe
 
 ```
-git clone [this repo](https://github.com/ZachKLYeh/Yolox_Annotation_Application.git)
+git clone https://github.com/ZachKLYeh/Yolox_Annotation_Application.git
 ```
 ```
 cd Yolox_Annotation_Application
