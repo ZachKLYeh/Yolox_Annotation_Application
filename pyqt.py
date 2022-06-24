@@ -293,6 +293,7 @@ class ScrollMessageBox(QMessageBox):
       #create label
       self.label = QLabel(string, self)
       self.label.setFont(QFont('Arial', 10))
+      self.label.setTextInteractionFlags(Qt.TextSelectableByMouse)
       #attach label to stringlay to content
       self.stringlayout.addWidget(self.label)
 
