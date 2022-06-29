@@ -15,11 +15,11 @@ from PyQt5.QtGui import QFont
 
 #import darktheme
 import qdarktheme
+
 #set style sheet
 style_sheet = qdarktheme.load_stylesheet()
-#set application font
+#set application
 app_font = QFont("Arial", 8)
-
 app = QApplication(sys.argv)
 app.setStyleSheet(style_sheet)
 app.instance().setFont(app_font)
