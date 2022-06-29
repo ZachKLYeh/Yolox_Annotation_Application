@@ -2,12 +2,13 @@ from document import DOCUMENT
 from utils import *
 import os
 import cv2
+import sys
 from collections import Counter
 from shutil import copy, rmtree
 from onnxruntime import InferenceSession
 
 #import PyQt Libraries
-from PyQt5.QtWidgets import QMessageBox, QMainWindow, QFileDialog, QScrollArea
+from PyQt5.QtWidgets import QMessageBox, QMainWindow, QFileDialog, QScrollArea, QApplication
 from PyQt5.QtWidgets import  QFormLayout, QHBoxLayout, QVBoxLayout, QPushButton, QWidget, QLineEdit, QSlider, QLabel, QRadioButton, QProgressBar
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtGui import QFont
@@ -18,6 +19,10 @@ import qdarktheme
 style_sheet = qdarktheme.load_stylesheet()
 #set application font
 app_font = QFont("Arial", 8)
+
+app = QApplication(sys.argv)
+app.setStyleSheet(style_sheet)
+app.instance().setFont(app_font)
 
 #PyQt mainwindow
 class MainWindow(QMainWindow):
@@ -555,3 +560,4 @@ class CalculationThread(QThread):
 
         #return a string and errormessage
         return self.calcuation_result_text, self.errormsg
+
