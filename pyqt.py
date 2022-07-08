@@ -268,11 +268,17 @@ class MainWindow(QMainWindow):
         self.threshould = self.horizontalSlider.value()/10
 
     def inputfileselect(self):
-        self.filepath = QFileDialog.getExistingDirectory(None, "Select input directory", "C:/")
+        if self.input_dir == "":
+            self.filepath = QFileDialog.getExistingDirectory(None, "Select input directory", "C:/")
+        else:
+            self.filepath = QFileDialog.getExistingDirectory(None, "Select input directory", self.input_dir.text())
         self.input_dir.setText(self.filepath)
 
     def outputfileselect(self):
-        self.filepath = QFileDialog.getExistingDirectory(None, "Select output directory", "C:/")
+        if self.output_dir == "Same as the input folder":
+            self.filepath = QFileDialog.getExistingDirectory(None, "Select output directory", "C:/")
+        else:
+            self.filepath = QFileDialog.getExistingDirectory(None, "Select input directory", self.output_dir.text())
         self.output_dir.setText(self.filepath)
 
     def set_progressbar_value(self, value):
@@ -365,18 +371,18 @@ class GenerationThread(QThread):
         for f in files:
             filepath = os.path.join(input_dir, f)
             input_shape = tuple(map(int,  ['640', '640']))
-            origin_img = cv2.imread(filepath)
+            origin_img = cv2.imdecode(np.fromfile(filepath, dtype=np.uint8), -1)
 
             #when counrtering existing xml file or visulzed images, ignore the filefromat error, keep execting
-            self.ming=os.path.splitext (f)
-            str = self.ming[1]
-            if str == '.xml':
+            _, fileformat =os.path.splitext (f)
+            
+            if fileformat == '.xml':
                 self.counter += 1
                 continue
             elif f == 'visualized_images':
                 self.counter += 1
                 continue
-            elif str != '.jpg':
+            elif fileformat != '.jpg':
                 self.fileformaterror = True
                 break
 
